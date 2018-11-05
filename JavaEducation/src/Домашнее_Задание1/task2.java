@@ -1,4 +1,4 @@
-package домашнее1;
+package Домашнее_Задание1;
 
 import java.util.Scanner;
 
