@@ -11,22 +11,22 @@ public class task4 {
     public static void main(String[] args) {
         int k = 0;
         int mas[] = {1, 3, 3};
-        int mas2[] = new int[k];
+        int mas2[] = new int[mas.length];
 
 
-        for (k = 0; k < mas2.length; k++) {
-
-            for (int i = 0; i < mas.length; i++ ) {
-                if (mas[i]!=mas2[k])
-                    mas2[k] = mas[i];
-                k++;
+        for (int j = 0; j < mas.length; j++) {
+            boolean isDuplicate = false;
+            for (int i = 0; i < mas2.length; i++ ) {
+                if (mas[j] == mas2[i]) isDuplicate = true;
             }
-    }
-
-
-
-        for (k = 0; k < mas.length; k++) {
-            System.out.println(mas2[k]);
+            if (!isDuplicate) {mas2[k] = mas[j];k++;}
         }
+
+        for (int m = 0; m < mas2.length; m++) {
+            System.out.println(mas2[m]);
+        }
+
+
+
     }
 }

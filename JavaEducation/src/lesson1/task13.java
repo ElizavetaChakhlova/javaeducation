@@ -1,4 +1,4 @@
-package домашнее1;
+package lesson1;
 /**
  * Напишите метод который принимает ФИО и выводит на экран "Фамилия Имя"
  * Пример:
@@ -15,7 +15,7 @@ public class task13 {
 
         for (int i = 0; i < s.length(); i++ ) {
             familia = familia + String.valueOf(s.charAt(i));
-                if (String.valueOf(s.charAt(i)) == "а")
+                if (String.valueOf(s.charAt(i)) == "")
                     System.out.println(familia);
         }
 }
