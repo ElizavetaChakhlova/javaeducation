@@ -25,8 +25,5 @@ public class task4 {
         for (int m = 0; m < mas2.length; m++) {
             System.out.println(mas2[m]);
         }
-
-
-
     }
 }
